@@ -9,10 +9,8 @@ exports.select=function (req,res) {
 }
 
 exports.create=function (req,res) {
-    var product=new Product();
-    product.name=req.body.name;
-    product.price=req.body.price;
-    product.date=req.body.date;
+    var product = new Product(req.body);
+
     var a = 'test'; // to be deleted
 
     product.save(function (err) {
