@@ -10,5 +10,6 @@ app.use(bodyParser.json());
 app.use('/api',router);
 app.listen(port);
 
+
 mongoose.connect('mongodb://localhost:27017/mongodbTestRef');
 console.log('magic happens on port : ',+ port);

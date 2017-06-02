@@ -1,6 +1,7 @@
 var mongoose     = require('mongoose');
 mongoose.Promise = require('bluebird');
 
+
 var Schema      =   mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 var empSchema   =   new Schema({
